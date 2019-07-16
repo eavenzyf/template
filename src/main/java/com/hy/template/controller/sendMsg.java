@@ -19,8 +19,8 @@ import static com.hy.template.utils.sendTemplateMsgUtil.sendTemplateMsg;
 public class sendMsg {
     public static void main(String[] args) {
         String token_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET";
-        String appID = "wxffc40c2c8d24b734";
-        String secret = "f96ad7867ce24675fc8ea37069016dc5";
+        String appID = "Your APPID";
+        String secret = "Your SecretID";
         //封装了推送实体类，别问我为什么一直封装，java三特性 继承 封装 多态
         wxTemplate tem = new wxTemplate();
         //模板id 刚刚获取废了很成时间 如果还不会，我觉得你应该放弃java了
@@ -28,7 +28,7 @@ public class sendMsg {
         tem.setTemplateId("lu1Av74KHk2_KPfp-mZuEdjecc9_LfVU1v4k1u1S0eE");
         //推送给哪位神仙。 这个是openId 不是UnionID 如果是unionId肯定推送不过去。
         //openID
-        tem.setToUser("ojOfx5B3kNqCpX0dQUwiINd4vP4M");
+        tem.setToUser("Your OpenID");
         //formId 这个炒鸡重要，没有他百分百推送不成功，formId+openId 才能推送
         //formID
         tem.setForm_id("a7d9f65daeae484a802f440b2aebe826");
